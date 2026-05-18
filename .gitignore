@@ -14,3 +14,4 @@ artifacts/
 # IDE
 .idea/
 *.iml
+Server/Tamework/.DS_Store
