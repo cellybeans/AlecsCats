@@ -1,7 +1,3 @@
-## Alec's Cats! is a finalist in the Hytale New Worlds Modding Contest in the NPCs category!
-### If you've enjoyed my mod, I would be thankful for your vote! [Vote Here](https://overwolfdevs.typeform.com/to/uVlmdC1I)
-But be sure to check out all the [other finalists](https://www.curseforge.com/community-picks/hytale/curseforge-may26-npcs)! There's a lot of cool stuff in here that I'm sure you haven't seen yet!
-
 [![Cats](https://img.shields.io/curseforge/dt/1432112?label=Cats&style=for-the-badge&logo=curseforge&color=rgb(241%2C100%2C54))](https://www.curseforge.com/hytale/mods/alecs-cats)
 [![Tamework](https://img.shields.io/curseforge/dt/1447962?label=Tamework&style=for-the-badge&logo=curseforge&color=rgb(241%2C100%2C54))](https://www.curseforge.com/hytale/mods/alecs-tamework)
 [![Nametags](https://img.shields.io/curseforge/dt/1464844?label=Nametags&style=for-the-badge&logo=curseforge&color=rgb(241%2C100%2C54))](https://www.curseforge.com/hytale/mods/alecs-nametags)
@@ -25,7 +21,7 @@ This mod started as a simple cat conversion from unused base-game assets and has
 - Multi-language localization
 
 ## Requirements
-- **Alec's Tamework!** `2.9.x` dependency is required (Alechilles:Alec's Tamework!) for parent-line breeding role inheritance.
+- **Alec's Tamework!** `2.10.x` dependency is required (Alechilles:Alec's Tamework!) for parent-line breeding role inheritance and pre-1.9.0 eye attachment migration.
 
 ## Craftable Items
 ### Cat Collar (Capture/Spawn Item)
@@ -85,18 +81,23 @@ Notes:
 - Cats can spawn with 0-4 traits
 - Traits can alter anything from size, to strength, to fertility and more
 - Traits can be inherited from parents, and breeding cats with the same traits together can result in higher trait values (or lower!)
-- Fur color is also inherited from parents
+- Fur and eye color are also inherited from parents
 - Body type roles can be inherited from either parent, with a small chance of a different body type appearing as a mutation
 
 ## Spawns
 Cats are uncommon but not extremely rare.
-- Zone 1: Plains, Forests
-- Zone 3: Forests
+- Mediumhair: Zone 1 Plains and Forests
+- Shorthair: Zone 2 Oasis, Plateau, and Savanna
+- Bobtail: Zone 1 Mountains, Zone 2 Plateau, and Zone 3 Mountains
 
 They usually spawn solo, but can spawn in small groups.
 
 ## Color Variants
 #### _All cat textures are now made by an artist far more skilled than me, [Celly (@Excel Lynt)](https://www.curseforge.com/members/excel_lynt/)._
+
+Eye colors are separate randomized attachments, so cats can inherit eyes independently from coat color.
+
+Eye variants include standard colors plus rare odd-eye combinations, including orange-yellow.
 
 - Default black/white
 - Missy (Darker Dust Kitty)
@@ -140,6 +141,8 @@ They usually spawn solo, but can spawn in small groups.
   - Server/Tamework/Breeding/ACBreedCat.json
 - Trait Config:
   - Server/Tamework/Traits/ACTraitsCat.json
+- Attachment Migration Config:
+  - Server/Tamework/AttachmentMigrations/ACAttachmentMigrationCatEyesPre190.json
 
 
 ## Want More?
