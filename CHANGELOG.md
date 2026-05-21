@@ -2,16 +2,15 @@
 
 All notable changes to **Alec's Cats!** will be documented in this file.
 
-## 1.11.0 - Collar Icons + Blue Point Cats - 2026-05-21
+## 1.11.0 - Collar Icons + Blue Point Cats + Attachment tooltips - 2026-05-21
 
 ### Added
 - Added Celly's Blue Birman / Blue Point coat variant, with shorthair and longhair spawn weighting plus model definitions for every cat body type.
 - Added readable Tamework attachment display labels for cat coat and eye attachments.
 - Enabled Tamework gender-aware breeding for cats, requiring different-gender pairs when breeding gender support is enabled.
-- Added grouped Cat Collar icon overrides for every body type and coat, using a representative rendered eye overlay.
+- Added grouped Cat Collar icon overrides for every body type and coat
 
 ### Changed
-- Replaced the older flat generated cat collar icon set with grouped role-and-coat icon paths.
 - Updated CurseForge publishing to upload changelogs as HTML.
 
 ## 1.10.0 - Longhair Polish + Texture Refresh - 2026-05-19
