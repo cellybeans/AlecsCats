@@ -28,6 +28,7 @@ This mod started as a simple cat conversion from unused base-game assets and has
 - 3x Light Leather
 - 1x Gold Bar
 - Bench: Workbench Tier 2 (Tinkering)
+- Stored cats use generated collar icons that match their body type and coat.
 
 ### Cat Treat Bag (Command Item)
 - 2x Light Leather
@@ -119,6 +120,7 @@ Eye variants include standard colors plus rare odd-eye combinations, including o
 - Cream Semi-Tabby
 - Dark Gray Tabby
 - Siamese
+- Blue Point
 
 ## Body Types
 - Mediumhair

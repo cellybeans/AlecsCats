@@ -148,6 +148,12 @@
           "Attachments": {
             "Coat": "Siamese"
           }
+        },
+        {
+          "Icon": "Icons/ItemsGenerated/AlecsCats/Collar/Cat/coat-blue-birman.png",
+          "Attachments": {
+            "Coat": "Blue Birman"
+          }
         }
       ]
     },
@@ -263,6 +269,12 @@
           "Icon": "Icons/ItemsGenerated/AlecsCats/Collar/Cat_Longhair/coat-siamese.png",
           "Attachments": {
             "Coat": "Siamese"
+          }
+        },
+        {
+          "Icon": "Icons/ItemsGenerated/AlecsCats/Collar/Cat_Longhair/coat-blue-birman.png",
+          "Attachments": {
+            "Coat": "Blue Birman"
           }
         }
       ]
@@ -380,6 +392,12 @@
           "Attachments": {
             "Coat": "Siamese"
           }
+        },
+        {
+          "Icon": "Icons/ItemsGenerated/AlecsCats/Collar/Cat_Shorthair/coat-blue-birman.png",
+          "Attachments": {
+            "Coat": "Blue Birman"
+          }
         }
       ]
     },
@@ -495,6 +513,12 @@
           "Icon": "Icons/ItemsGenerated/AlecsCats/Collar/Cat_Bobtail/coat-siamese.png",
           "Attachments": {
             "Coat": "Siamese"
+          }
+        },
+        {
+          "Icon": "Icons/ItemsGenerated/AlecsCats/Collar/Cat_Bobtail/coat-blue-birman.png",
+          "Attachments": {
+            "Coat": "Blue Birman"
           }
         }
       ]
