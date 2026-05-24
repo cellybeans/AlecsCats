@@ -29,12 +29,10 @@
       }
     },
     "Effects": {
-      "ItemPlayerAnimationsId": "",
-      "ItemAnimationId": "Box_Open"
+      "ItemAnimationId": "Interact"
     }
   },
   "Effects": {
-    "ItemPlayerAnimationsId": "",
-    "ItemAnimationId": "Box_Close"
+    "ItemAnimationId": "Interact"
   }
 }
