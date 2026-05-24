@@ -10,7 +10,7 @@
   "Next": {
     "Type": "ChangeState",
     "Changes": {
-      "default": "Closed"
+      "default": "Open"
     }
   },
   "Failed": {
@@ -25,11 +25,30 @@
     "Next": {
       "Type": "ChangeState",
       "Changes": {
-        "Closed": "default"
+        "Closed": "Open"
       }
     },
     "Effects": {
       "ItemAnimationId": "Interact"
+    },
+    "Failed": {
+      "Type": "BlockCondition",
+      "Matchers": [
+        {
+          "Block": {
+            "State": "Open"
+          }
+        }
+      ],
+      "Next": {
+        "Type": "ChangeState",
+        "Changes": {
+          "Open": "Closed"
+        }
+      },
+      "Effects": {
+        "ItemAnimationId": "Interact"
+      }
     }
   },
   "Effects": {
