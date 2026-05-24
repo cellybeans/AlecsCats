@@ -7,6 +7,9 @@ All notable changes to **Alec's Cats!** will be documented in this file.
 ### Added
 - Open Cat Cardboard Boxes now use a roomier wall-and-floor hitbox so the interior is open, and idle pet cats seek open boxes to sit inside.
 
+### Changed
+- Cats sitting in open cardboard boxes now keep a neutral head pose instead of watching the floor-position box target.
+
 ## 1.11.0 - Collar Icons + Blue Point Cats + Attachment tooltips - 2026-05-21
 
 ### Added

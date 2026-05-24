@@ -1095,12 +1095,6 @@
                       "Random": true
                     }
                   },
-                  "BodyMotion": {
-                    "Type": "MatchLook"
-                  },
-                  "HeadMotion": {
-                    "Type": "Watch"
-                  },
                   "ActionsBlocking": true,
                   "Actions": [
                     {
