@@ -1096,21 +1096,20 @@
               },
               "Instructions": [
                 {
-                  "$Comment": "If already inside the open box target, sit for a while and then release the block sensor reservation.",
+                  "$Comment": "When the box-sit timer finishes, stand up, release the reservation, and start a cooldown.",
                   "Sensor": {
-                    "Type": "AdjustPosition",
-                    "Offset": {
-                      "Compute": "CatBoxTargetOffset"
-                    },
-                    "Sensor": {
-                      "Type": "Block",
-                      "Range": 0.35,
-                      "MaxHeight": 3,
-                      "Blocks": {
-                        "Compute": "CatBoxBlockSet"
+                    "Type": "And",
+                    "Sensors": [
+                      {
+                        "Type": "Flag",
+                        "Name": "CatBox_Sitting"
                       },
-                      "Random": true
-                    }
+                      {
+                        "Type": "Timer",
+                        "Name": "CatBox_Sit_Duration",
+                        "State": "Stopped"
+                      }
+                    ]
                   },
                   "BodyMotion": {
                     "Type": "Nothing"
@@ -1120,30 +1119,6 @@
                   },
                   "ActionsBlocking": true,
                   "Actions": [
-                    {
-                      "Type": "TameworkDebugMessage",
-                      "Message": "[CatBoxDebug] sit branch active"
-                    },
-                    {
-                      "Type": "SpawnParticles",
-                      "ParticleSystem": "Hearts",
-                      "Offset": {
-                        "Compute": "ParticleOffset"
-                      },
-                      "TargetNodeName": "Head"
-                    },
-                    {
-                      "Type": "Timeout",
-                      "Delay": {
-                        "Compute": "CatBoxSitDurationRange"
-                      },
-                      "DelayAfter": true,
-                      "Action": {
-                        "Type": "PlayAnimation",
-                        "Slot": "Status",
-                        "Animation": "Sit"
-                      }
-                    },
                     {
                       "Type": "TameworkDebugMessage",
                       "Message": "[CatBoxDebug] sit duration finished"
@@ -1182,29 +1157,135 @@
                       "Type": "ResetBlockSensors"
                     },
                     {
+                      "Type": "SetFlag",
+                      "Name": "CatBox_Sitting",
+                      "SetTo": false
+                    },
+                    {
                       "Type": "TameworkDebugMessage",
                       "Message": "[CatBoxDebug] sit cleanup complete"
                     }
                   ]
                 },
                 {
+                  "$Comment": "If already inside the open box target, start sitting and run a timer for the sit duration.",
+                  "Sensor": {
+                    "Type": "And",
+                    "Sensors": [
+                      {
+                        "Type": "Flag",
+                        "Name": "CatBox_Sitting",
+                        "Set": false
+                      },
+                      {
+                        "Type": "AdjustPosition",
+                        "Offset": {
+                          "Compute": "CatBoxTargetOffset"
+                        },
+                        "Sensor": {
+                          "Type": "Block",
+                          "Range": 0.35,
+                          "MaxHeight": 3,
+                          "Blocks": {
+                            "Compute": "CatBoxBlockSet"
+                          },
+                          "Random": true
+                        }
+                      }
+                    ]
+                  },
+                  "BodyMotion": {
+                    "Type": "Nothing"
+                  },
+                  "HeadMotion": {
+                    "Type": "Nothing"
+                  },
+                  "Actions": [
+                    {
+                      "Type": "TameworkDebugMessage",
+                      "Message": "[CatBoxDebug] sit branch active"
+                    },
+                    {
+                      "Type": "SpawnParticles",
+                      "ParticleSystem": "Hearts",
+                      "Offset": {
+                        "Compute": "ParticleOffset"
+                      },
+                      "TargetNodeName": "Head"
+                    },
+                    {
+                      "Type": "TimerStart",
+                      "Name": "CatBox_Sit_Duration",
+                      "StartValueRange": {
+                        "Compute": "CatBoxSitDurationRange"
+                      },
+                      "RestartValueRange": {
+                        "Compute": "CatBoxSitDurationRange"
+                      }
+                    },
+                    {
+                      "Type": "TimerRestart",
+                      "Name": "CatBox_Sit_Duration"
+                    },
+                    {
+                      "Type": "SetFlag",
+                      "Name": "CatBox_Sitting",
+                      "SetTo": true
+                    },
+                    {
+                      "Type": "PlayAnimation",
+                      "Slot": "Status",
+                      "Animation": "Sit"
+                    }
+                  ]
+                },
+                {
+                  "$Comment": "Hold still while the box-sit timer is running.",
+                  "Sensor": {
+                    "Type": "Flag",
+                    "Name": "CatBox_Sitting"
+                  },
+                  "BodyMotion": {
+                    "Type": "Nothing"
+                  },
+                  "HeadMotion": {
+                    "Type": "Nothing"
+                  },
+                  "Actions": [
+                    {
+                      "Type": "TameworkDebugMessage",
+                      "Message": "[CatBoxDebug] sit hold active"
+                    }
+                  ]
+                },
+                {
                   "$Comment": "Seek the adjusted center point inside the open box.",
                   "Sensor": {
-                    "Type": "AdjustPosition",
-                    "Offset": {
-                      "Compute": "CatBoxTargetOffset"
-                    },
-                    "Sensor": {
-                      "Type": "Block",
-                      "Range": {
-                        "Compute": "CatBoxSearchRange"
+                    "Type": "And",
+                    "Sensors": [
+                      {
+                        "Type": "Flag",
+                        "Name": "CatBox_Sitting",
+                        "Set": false
                       },
-                      "MaxHeight": 3,
-                      "Blocks": {
-                        "Compute": "CatBoxBlockSet"
-                      },
-                      "Random": true
-                    }
+                      {
+                        "Type": "AdjustPosition",
+                        "Offset": {
+                          "Compute": "CatBoxTargetOffset"
+                        },
+                        "Sensor": {
+                          "Type": "Block",
+                          "Range": {
+                            "Compute": "CatBoxSearchRange"
+                          },
+                          "MaxHeight": 3,
+                          "Blocks": {
+                            "Compute": "CatBoxBlockSet"
+                          },
+                          "Random": true
+                        }
+                      }
+                    ]
                   },
                   "BodyMotion": {
                     "Type": "Seek",
