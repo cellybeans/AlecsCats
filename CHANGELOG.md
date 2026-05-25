@@ -8,6 +8,7 @@ All notable changes to **Alec's Cats!** will be documented in this file.
 - Open Cat Cardboard Boxes now use a roomier wall-and-floor hitbox so the interior is open, and idle pet cats seek open boxes to sit inside.
 
 ### Changed
+- Large Cat Cardboard Boxes now place as the large open box variant and use a matching open-top hitbox for cat box behavior.
 - Cats sitting in open cardboard boxes now keep a neutral head pose instead of watching the floor-position box target.
 - Cats sitting in open cardboard boxes now explicitly stop moving instead of sliding while the sit animation plays.
 - Cats sitting in open cardboard boxes now explicitly clear stale head tracking from the box approach.

@@ -1,11 +1,11 @@
 {
   "TranslationProperties": {
-    "Name": "server.items.Cat_Box.name"
+    "Name": "server.items.Cat_Box2.name"
   },
   "PlayerAnimationsId": "Block",
   "Interactions": {
     "Primary": "Block_Primary",
-    "Secondary": "Block_Box_Secondary"
+    "Secondary": "Block_Box2_Secondary"
   },
   "Categories": [
     "Furniture.Containers"
@@ -55,6 +55,7 @@
         "Open": {
           "InteractionHint": "Close Box",
           "CustomModelAnimation": "Blocks/Animations/CatBox/Box_Open.blockyanim",
+          "HitboxType": "Cat_Box2_Open",
           "Gathering": {
             "Soft": {
               "DropList": {}
