@@ -180,6 +180,13 @@
       ],
       "Description": "How long a cat remains in the sit posture after reaching an open cardboard box."
     },
+    "CatBoxCooldownRange": {
+      "Value": [
+        20,
+        45
+      ],
+      "Description": "How long after sitting in a cardboard box before an idle cat can choose a box again."
+    },
     "NightFlavorAnimation": {
       "Value": "Idle",
       "Description": "A flavor animation to play at night. Ignored if null or empty."
@@ -1060,22 +1067,32 @@
                 "Compute": "!isEmpty(CatBoxBlockSet) && CatBoxSearchRange > 0"
               },
               "Sensor": {
-                "Type": "AdjustPosition",
-                "Offset": {
-                  "Compute": "CatBoxTargetOffset"
-                },
-                "Sensor": {
-                  "Type": "Block",
-                  "Range": {
-                    "Compute": "CatBoxSearchRange"
+                "Type": "And",
+                "Sensors": [
+                  {
+                    "Type": "Timer",
+                    "Name": "CatBox_Sit_Cooldown",
+                    "State": "Stopped"
                   },
-                  "MaxHeight": 3,
-                  "Blocks": {
-                    "Compute": "CatBoxBlockSet"
-                  },
-                  "Random": true,
-                  "Reserve": true
-                }
+                  {
+                    "Type": "AdjustPosition",
+                    "Offset": {
+                      "Compute": "CatBoxTargetOffset"
+                    },
+                    "Sensor": {
+                      "Type": "Block",
+                      "Range": {
+                        "Compute": "CatBoxSearchRange"
+                      },
+                      "MaxHeight": 3,
+                      "Blocks": {
+                        "Compute": "CatBoxBlockSet"
+                      },
+                      "Random": true,
+                      "Reserve": true
+                    }
+                  }
+                ]
               },
               "Instructions": [
                 {
@@ -1126,7 +1143,36 @@
                         "Compute": "CatBoxSitDurationRange"
                       }
                     },
-
+                    {
+                      "Type": "PlayAnimation",
+                      "Slot": "Status",
+                      "Animation": "StandUp"
+                    },
+                    {
+                      "Type": "Timeout",
+                      "Delay": [
+                        0.83,
+                        0.83
+                      ]
+                    },
+                    {
+                      "Type": "PlayAnimation",
+                      "Slot": "Status"
+                    },
+                    {
+                      "Type": "TimerStart",
+                      "Name": "CatBox_Sit_Cooldown",
+                      "StartValueRange": {
+                        "Compute": "CatBoxCooldownRange"
+                      },
+                      "RestartValueRange": {
+                        "Compute": "CatBoxCooldownRange"
+                      }
+                    },
+                    {
+                      "Type": "TimerRestart",
+                      "Name": "CatBox_Sit_Cooldown"
+                    },
                     {
                       "Type": "ResetBlockSensors"
                     }
