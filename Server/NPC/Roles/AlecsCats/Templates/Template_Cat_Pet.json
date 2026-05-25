@@ -1207,7 +1207,7 @@
                     },
                     {
                       "Type": "SpawnParticles",
-                      "ParticleSystem": "Hearts",
+                      "ParticleSystem": "Hearts_Subtle",
                       "Offset": {
                         "Compute": "ParticleOffset"
                       },
