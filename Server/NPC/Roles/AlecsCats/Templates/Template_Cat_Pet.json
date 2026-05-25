@@ -1104,6 +1104,10 @@
                   "ActionsBlocking": true,
                   "Actions": [
                     {
+                      "Type": "TameworkDebugMessage",
+                      "Message": "[CatBoxDebug] sit branch active"
+                    },
+                    {
                       "Type": "PlayAnimation",
                       "Slot": "Status",
                       "Animation": "Sit"
@@ -1158,7 +1162,13 @@
                   },
                   "HeadMotion": {
                     "Type": "Watch"
-                  }
+                  },
+                  "Actions": [
+                    {
+                      "Type": "TameworkDebugMessage",
+                      "Message": "[CatBoxDebug] seek branch active"
+                    }
+                  ]
                 }
               ]
             },
