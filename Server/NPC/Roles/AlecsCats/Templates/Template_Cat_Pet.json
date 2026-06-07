@@ -1120,10 +1120,6 @@
                   "ActionsBlocking": true,
                   "Actions": [
                     {
-                      "Type": "TameworkDebugMessage",
-                      "Message": "[CatBoxDebug] sit duration finished"
-                    },
-                    {
                       "Type": "PlayAnimation",
                       "Slot": "Status",
                       "Animation": "StandUp"
@@ -1160,10 +1156,6 @@
                       "Type": "SetFlag",
                       "Name": "CatBox_Sitting",
                       "SetTo": false
-                    },
-                    {
-                      "Type": "TameworkDebugMessage",
-                      "Message": "[CatBoxDebug] sit cleanup complete"
                     }
                   ]
                 },
@@ -1201,10 +1193,6 @@
                     "Type": "Nothing"
                   },
                   "Actions": [
-                    {
-                      "Type": "TameworkDebugMessage",
-                      "Message": "[CatBoxDebug] sit branch active"
-                    },
                     {
                       "Type": "SpawnParticles",
                       "ParticleSystem": "Hearts_Subtle",
@@ -1250,13 +1238,7 @@
                   },
                   "HeadMotion": {
                     "Type": "Nothing"
-                  },
-                  "Actions": [
-                    {
-                      "Type": "TameworkDebugMessage",
-                      "Message": "[CatBoxDebug] sit hold active"
-                    }
-                  ]
+                  }
                 },
                 {
                   "$Comment": "Seek the adjusted center point inside the open box.",
@@ -1298,13 +1280,7 @@
                   },
                   "HeadMotion": {
                     "Type": "Nothing"
-                  },
-                  "Actions": [
-                    {
-                      "Type": "TameworkDebugMessage",
-                      "Message": "[CatBoxDebug] seek branch active"
-                    }
-                  ]
+                  }
                 }
               ]
             },
