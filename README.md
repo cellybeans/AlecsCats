@@ -8,8 +8,6 @@
 
 [![Sponsored By HytaleModding Grant Program](https://github.com/user-attachments/assets/a03709e3-445a-4e58-8ec5-591688490c5d)](https://hytalemodding.dev/en/grants)
 
-[![Featured in Hytale Magazine](https://hytalemagazine.com/badges/featured-in-hytale-magazine.png)](https://hytalemagazine.com/issues/issue-001)
-
 ## Summary
 This mod started as a simple cat conversion from unused base-game assets and has grown into a full pet system with:
 - Taming + ownership

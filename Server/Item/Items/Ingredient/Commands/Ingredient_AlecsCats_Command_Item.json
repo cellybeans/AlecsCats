@@ -12,12 +12,16 @@
         "Quantity": 2
       },
       {
+        "ItemId": "Plant_Flower_Catnip",
+        "Quantity": 3
+      },
+      {
         "ItemId": "Food_Fish_Raw",
-        "Quantity": 5
+        "Quantity": 3
       },
       {
         "ItemId": "Food_Wildmeat_Raw",
-        "Quantity": 5
+        "Quantity": 3
       }
     ],
     "Output": [
