@@ -105,38 +105,18 @@ Cats are uncommon but not extremely rare.
 
 They usually spawn solo, but can spawn in small groups.
 
-## Color Variants
+## 1,216 Appearance Variations
 #### _All cat textures are now made by an artist far more skilled than me, [Celly (@Excel Lynt)](https://www.curseforge.com/members/excel_lynt/)._
 
-Eye colors are separate randomized attachments, so cats can inherit eyes independently from coat color.
+Appearance combines body type, coat, and eyes. Eye colors are separate randomized attachments, so cats can inherit eyes independently from coat color.
 
-Eye variants include standard colors plus rare odd-eye combinations, including orange-yellow.
+| Category | Count | Variants |
+| --- | ---: | --- |
+| Body types | 4 | Mediumhair<br>Longhair<br>Shorthair<br>Bobtail |
+| Coats | 19 | Black and White<br>Gray<br>Light Gray<br>Silver Tabby<br>Orange Tabby<br>Brown Tabby<br>White<br>Cream<br>Cream Tuxedo<br>Gray Tuxedo<br>Brown Tuxedo<br>Light Orange Tabby Tuxedo<br>Black Tuxedo<br>Black<br>Snowshoe<br>Sand Tabby<br>Dark Gray Tabby<br>Chocolate Point<br>Blue Point |
+| Eyes | 16 | Bright Orange<br>Bright Yellow<br>Dark Orange<br>Forest Green<br>Green<br>Hazel<br>Ice Blue<br>Light Blue<br>Blue and Green-Yellow (Rare)<br>Blue and Green (Rare)<br>Orange and Yellow (Rare)<br>Yellow and Green (Rare)<br>Pumpkin Orange<br>Teal<br>Yellow-Lime<br>Yellow |
 
-- Default black/white
-- Missy (Darker Dust Kitty)
-- Nyxie (Lighter Dust Kitty with a few white spots)
-- Silver Tabby
-- Orange Tabby
-- Brown Tabby
-- White
-- Cream
-- Cream Tuxedo
-- Gray Tuxedo
-- Brown Tuxedo
-- Light Orange Tabby Tuxedo
-- Black Tuxedo
-- Black
-- Snowshoe
-- Cream Semi-Tabby
-- Dark Gray Tabby
-- Siamese
-- Blue Point
-
-## Body Types
-- Mediumhair
-- Longhair
-- Shorthair
-- Bobtail
+Total combinations: 4 body types x 19 coats x 16 eye variants = 1,216 appearance variations.
 
 ## Config Files
 - Companion Config:
