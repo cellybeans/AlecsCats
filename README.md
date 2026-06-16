@@ -1,12 +1,18 @@
-[![Tamework](https://img.shields.io/curseforge/dt/1447962?label=Tamework&style=for-the-badge&logo=curseforge&color=rgb(241%2C100%2C54))](https://www.curseforge.com/hytale/mods/alecs-tamework)
-[![Cats](https://img.shields.io/curseforge/dt/1432112?label=Cats&style=for-the-badge&logo=curseforge&color=rgb(241%2C100%2C54))](https://www.curseforge.com/hytale/mods/alecs-cats)
-[![Nametags](https://img.shields.io/curseforge/dt/1464844?label=Nametags&style=for-the-badge&logo=curseforge&color=rgb(241%2C100%2C54))](https://www.curseforge.com/hytale/mods/alecs-nametags)
-[![Animal Husbandry](https://img.shields.io/curseforge/dt/1480275?label=Animal%20Husbandry&style=for-the-badge&logo=curseforge&color=rgb(241%2C100%2C54))](https://www.curseforge.com/hytale/mods/alecs-animal-husbandry)
-
-[![Discord](https://img.shields.io/discord/1468261809739005996?style=for-the-badge&logo=discord&logoColor=white&label=Discord&color=rgb(88,101,242))](https://discord.gg/E8n8RgTTdq)
-[![Buy me a coffee](https://img.shields.io/badge/ko--fi-Support%20Me-ff5f5f?logo=ko-fi&style=for-the-badge)](https://ko-fi.com/alechilles) [![Creator Code](https://img.shields.io/badge/Creator%20Code-Alec-00AEEF?style=for-the-badge)](https://hytale.com/) ![X (Formerly Twitter)](https://img.shields.io/badge/Follow-%40Alec-White?style=for-the-badge&logo=x&logoColor=%23ffffff&logoSize=auto&label=Follow&labelColor=%23555555&color=%23939393&link=https%3A%2F%2Ftwitter.com%2Fintent%2Fuser%3Fscreen_name%3DAlechilles)
-
-[![Sponsored By HytaleModding Grant Program](https://github.com/user-attachments/assets/a03709e3-445a-4e58-8ec5-591688490c5d)](https://hytalemodding.dev/en/grants)
+<p>
+    <a href="https://www.curseforge.com/hytale/mods/alecs-tamework" target="_blank" rel="noopener noreferrer"><img alt="Tamework downloads" src="https://img.shields.io/curseforge/dt/1447962?label=Tamework&amp;style=for-the-badge&amp;logo=curseforge&amp;color=rgb(241%2C100%2C54)" /></a>
+    <a href="https://www.curseforge.com/hytale/mods/alecs-cats" target="_blank" rel="noopener noreferrer"><img alt="Cats downloads" src="https://img.shields.io/curseforge/dt/1432112?label=Cats&amp;style=for-the-badge&amp;logo=curseforge&amp;color=rgb(241%2C100%2C54)" /></a>
+    <a href="https://www.curseforge.com/hytale/mods/alecs-nametags" target="_blank" rel="noopener noreferrer"><img alt="Nametags downloads" src="https://img.shields.io/curseforge/dt/1464844?label=Nametags&amp;style=for-the-badge&amp;logo=curseforge&amp;color=rgb(241%2C100%2C54)" /></a>
+    <a href="https://www.curseforge.com/hytale/mods/alecs-animal-husbandry" target="_blank" rel="noopener noreferrer"><img alt="Animal Husbandry downloads" src="https://img.shields.io/curseforge/dt/1480275?label=Animal%20Husbandry&amp;style=for-the-badge&amp;logo=curseforge&amp;color=rgb(241%2C100%2C54)" /></a>
+  </p>
+  <p>
+    <a href="https://discord.gg/E8n8RgTTdq" target="_blank" rel="noopener noreferrer"><img alt="Join Discord" src="https://img.shields.io/discord/1468261809739005996?style=for-the-badge&amp;logo=discord&amp;logoColor=white&amp;label=Join%20Discord&amp;color=rgb(88,101,242)" /></a>
+    <a href="https://ko-fi.com/alechilles" target="_blank" rel="noopener noreferrer"><img alt="Support me on Ko-fi" src="https://img.shields.io/badge/ko--fi-Support%20Me-ff5f5f?logo=ko-fi&amp;style=for-the-badge" /></a>
+    <a href="https://hytale.com/" target="_blank" rel="noopener noreferrer"><img alt="Creator Code Alec" src="https://img.shields.io/badge/Creator%20Code-Alec-00AEEF?style=for-the-badge" /></a>
+    <a href="https://twitter.com/intent/user?screen_name=Alechilles" target="_blank" rel="noopener noreferrer"><img alt="Follow Alec on X" src="https://img.shields.io/badge/Follow-%40Alec-White?style=for-the-badge&amp;logo=x&amp;logoColor=rgb(255%2C255%2C255)&amp;logoSize=auto&amp;label=Follow&amp;labelColor=rgb(85%2C85%2C85)&amp;color=rgb(147%2C147%2C147)" /></a>
+  </p>
+  <p>
+    <a href="https://hytalemodding.dev/en/grants" target="_blank" rel="noopener noreferrer"><img alt="Sponsored by HytaleModding Grant Program" src="https://github.com/user-attachments/assets/a03709e3-445a-4e58-8ec5-591688490c5d" /></a>
+  </p>
 
 ## Summary
 This mod started as a simple cat conversion from unused base-game assets and has grown into a full pet system with:
@@ -18,8 +24,18 @@ This mod started as a simple cat conversion from unused base-game assets and has
 - Trait generation and inheritance for bred companion cats
 - Multi-language localization
 
-## Requirements
-- **Alec's Tamework!** `2.11.x` dependency is required (Alechilles:Alec's Tamework!) for parent-line breeding role inheritance, pre-1.9.0 eye attachment migration, attachment display labels, and current Hytale compatibility.
+--------------
+<H2>Required:</H2>
+<ul>
+<li><a href="https://www.curseforge.com/hytale/mods/alecs-tamework">Alec's Tamework!</a> 2.14.x</li>
+</ul>
+<H2>Recommended:</H2>
+<ul>
+<li><a href="https://www.curseforge.com/hytale/mods/alecs-nametags">Alec's Nametags!</a></li>
+<li><a href="https://www.curseforge.com/hytale/mods/alecs-animal-husbandry">Alec's Animal Husbandry!</a></li>
+<li><a href="https://www.curseforge.com/hytale/mods/mmo-skill-tree-taming-skill-pack-alecs-tamework">Taming Addon for MMO Skills</a></li>
+</ul>
+------------
 
 ## Craftable Items
 ### Cat Collar (Capture/Spawn Item)

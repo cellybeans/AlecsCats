@@ -4,6 +4,8 @@ All notable changes to **Alec's Cats!** will be documented in this file.
 
 ## Unreleased
 
+## 1.12.1 - Needs Feedback Polish - 2026-06-16
+
 ### Changed
 - Updated pet cat needs seeking to use Tamework's current preflighted resource seek system, with cat-sized trough spacing and repeated food/water consumption before returning to idle.
 - Pet cats now show food and water thought bubbles when hunger or thirst drops to 25% or lower.
