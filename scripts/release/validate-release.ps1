@@ -123,6 +123,15 @@ function Assert-CatBoxRecipes {
     & $scriptPath
 }
 
+function Assert-CatTamedRoleWiring {
+    $scriptPath = "scripts/validation/validate-cat-tamed-role-wiring.ps1"
+    if (-not (Test-Path -Path $scriptPath)) {
+        throw "Cat tame role wiring validation script '$scriptPath' was not found."
+    }
+
+    & $scriptPath
+}
+
 if (-not (Test-Path -Path $ConfigPath)) {
     throw "Release config '$ConfigPath' was not found."
 }
@@ -141,6 +150,7 @@ Assert-CatBoxHitboxes
 Assert-CatBoxPrecision
 Assert-CatBoxOpenStateTargeting
 Assert-CatBoxRecipes
+Assert-CatTamedRoleWiring
 
 if ($config.requiresTameworkDependency) {
     if ($config.versionSource -ne "manifest") {
