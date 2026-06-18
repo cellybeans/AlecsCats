@@ -1,7 +1,10 @@
 {
   "Enabled": true,
   "RoleIds": [
-    "Cat"
+    "Cat",
+    "Cat_Longhair",
+    "Cat_Shorthair",
+    "Cat_Bobtail"
   ],
   "Interactions": [
     {

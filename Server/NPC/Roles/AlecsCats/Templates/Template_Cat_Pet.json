@@ -581,9 +581,6 @@
   "BreathesInWater": {
     "Compute": "BreathesInWater"
   },
-  "TamedRoleId": {
-    "Compute": "TamedRoleId"
-  },
   "MaxHealth": {
     "Compute": "MaxHealth"
   },

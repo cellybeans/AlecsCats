@@ -5,7 +5,7 @@ All notable changes to **Alec's Cats!** will be documented in this file.
 ## Unreleased
 
 ### Fixed
-- Taming wild longhair, shorthair, and bobtail cats now uses body-specific tame configs so each variant preserves its matching pet role instead of falling back to the mediumhair pet role.
+- Taming wild longhair, shorthair, and bobtail cats now preserves the matching pet body role through Tamework `RoleParam` resolution instead of falling back to the mediumhair pet role.
 
 ## 1.12.1 - Needs Feedback Polish - 2026-06-16
 

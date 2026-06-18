@@ -457,9 +457,6 @@
   "BreathesInWater": {
     "Compute": "BreathesInWater"
   },
-  "TamedRoleId": {
-    "Compute": "TamedRoleId"
-  },
   "Appearance": {
     "Compute": "Appearance"
   },
