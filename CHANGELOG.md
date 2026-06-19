@@ -4,6 +4,8 @@ All notable changes to **Alec's Cats!** will be documented in this file.
 
 ## Unreleased
 
+## 1.12.2 - Taming RoleParam Precision Fix - 2026-06-19
+
 ### Fixed
 - Taming wild longhair, shorthair, and bobtail cats now preserves the matching pet body role through Tamework `RoleParam` resolution instead of falling back to the mediumhair pet role.
 
