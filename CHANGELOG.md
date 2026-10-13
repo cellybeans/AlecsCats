@@ -2,6 +2,12 @@
 
 All notable changes to **Alec's Cats!** will be documented in this file.
 
+## 2.0.2 - Hytale 0.7 Compatibility Hotfix - 2026-10-13
+
+### Changed
+
+- Expanded declared Hytale server compatibility to `>=0.6.7 <0.8.0`, allowing stable Hytale 0.7 while retaining the existing minimum version.
+
 ## 2.0.1 - Treat Bag Shortcuts on Update 7 - 2026-10-09
 
 - On Hytale Update 7, the E and R shortcuts on the Cat Treat Bag keep working. The Update 7 client only sends those keys with a weapon in hand, so the bag counts as a weapon there. Nothing changes on Update 6.
