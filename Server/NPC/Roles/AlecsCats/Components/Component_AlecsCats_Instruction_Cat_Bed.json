@@ -28,6 +28,10 @@
     "CatBedHappiness": {
       "Value": 3,
       "Description": "Happiness gained after a nap in a bed."
+    },
+    "CatBedXp": {
+      "Value": 6,
+      "Description": "Companion XP gained with the happiness."
     }
   },
   "Content": {
@@ -245,6 +249,9 @@
             "Type": "TameworkProgressionReward",
             "Happiness": {
               "Compute": "CatBedHappiness"
+            },
+            "Xp": {
+              "Compute": "CatBedXp"
             }
           },
           {

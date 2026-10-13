@@ -1,0 +1,110 @@
+{
+  "$Comment": "A cat with the Gift Giver talent drops a small gift now and then while idle near its owner. The wait uses a saved alarm, and the first alarm is set without a gift, so placing the cat again does not produce one.",
+  "Type": "Component",
+  "Class": "Instruction",
+  "Parameters": {
+    "CatGiftRange": {
+      "Value": 6,
+      "Description": "How close the owner must be."
+    },
+    "CatGiftDropList": {
+      "Value": "Drop_Cat_Gift",
+      "Description": "Drop list the gift is picked from."
+    },
+    "CatGiftTimeout": {
+      "Value": [
+        "PT20H",
+        "PT36H"
+      ],
+      "Description": "Game time between gifts."
+    }
+  },
+  "Content": {
+    "Continue": true,
+    "Sensor": {
+      "Type": "TameworkHasTalent",
+      "TalentId": "AlecsCats_Mouser_GiftGiver"
+    },
+    "Instructions": [
+      {
+        "Continue": true,
+        "Sensor": {
+          "Type": "Alarm",
+          "Name": "CatGift_Ready",
+          "State": "Unset"
+        },
+        "Actions": [
+          {
+            "Type": "SetAlarm",
+            "Name": "CatGift_Ready",
+            "DurationRange": {
+              "Compute": "CatGiftTimeout"
+            }
+          }
+        ]
+      },
+      {
+        "Continue": true,
+        "Sensor": {
+          "Type": "And",
+          "Sensors": [
+            {
+              "Type": "Alarm",
+              "Name": "CatGift_Ready",
+              "State": "Passed"
+            },
+            {
+              "Type": "Player",
+              "Range": {
+                "Compute": "CatGiftRange"
+              },
+              "Filters": [
+                {
+                  "Type": "TameworkIsOwner"
+                }
+              ]
+            }
+          ]
+        },
+        "Actions": [
+          {
+            "Type": "DropItem",
+            "DropList": {
+              "Compute": "CatGiftDropList"
+            },
+            "Distance": [
+              0.5,
+              1.0
+            ],
+            "DropSector": [
+              -30,
+              30
+            ],
+            "Delay": [
+              0,
+              0
+            ],
+            "ThrowSpeed": 14.25
+          },
+          {
+            "Type": "SpawnParticles",
+            "ParticleSystem": "Hearts_Subtle",
+            "Offset": [
+              0,
+              0.6,
+              0
+            ],
+            "TargetNodeName": "Head"
+          },
+          {
+            "Type": "SetAlarm",
+            "Name": "CatGift_Ready",
+            "DurationRange": {
+              "Compute": "CatGiftTimeout"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

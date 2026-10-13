@@ -21,6 +21,10 @@
     "CatTowerHappiness": {
       "Value": 4,
       "Description": "Happiness gained after sitting on the perch."
+    },
+    "CatTowerXp": {
+      "Value": 6,
+      "Description": "Companion XP gained with the happiness."
     }
   },
   "Content": {
@@ -238,6 +242,9 @@
             "Type": "TameworkProgressionReward",
             "Happiness": {
               "Compute": "CatTowerHappiness"
+            },
+            "Xp": {
+              "Compute": "CatTowerXp"
             }
           },
           {

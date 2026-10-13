@@ -1,0 +1,83 @@
+{
+  "$Comment": "A cat with the Lap Cat talent purrs now and then while idle near its owner and gives the owner a short buff.",
+  "Type": "Component",
+  "Class": "Instruction",
+  "Parameters": {
+    "CatLapRange": {
+      "Value": 4,
+      "Description": "How close the owner must be."
+    },
+    "CatLapEffect": {
+      "Value": "HealthRegen_Buff_T1",
+      "Description": "Entity effect applied to the owner."
+    },
+    "CatLapCooldownRange": {
+      "Value": [
+        90,
+        150
+      ],
+      "Description": "Seconds between purrs."
+    }
+  },
+  "Content": {
+    "Continue": true,
+    "Sensor": {
+      "Type": "And",
+      "Sensors": [
+        {
+          "Type": "TameworkHasTalent",
+          "TalentId": "AlecsCats_Housecat_LapCat"
+        },
+        {
+          "Type": "Timer",
+          "Name": "CatLap_Cooldown",
+          "State": "Stopped"
+        },
+        {
+          "Type": "Player",
+          "Range": {
+            "Compute": "CatLapRange"
+          },
+          "Filters": [
+            {
+              "Type": "TameworkIsOwner"
+            }
+          ]
+        }
+      ]
+    },
+    "Actions": [
+      {
+        "Type": "ApplyEntityEffect",
+        "EntityEffect": {
+          "Compute": "CatLapEffect"
+        },
+        "UseTarget": true
+      },
+      {
+        "Type": "SpawnParticles",
+        "ParticleSystem": "Hearts_Subtle",
+        "Offset": [
+          0,
+          0.6,
+          0
+        ],
+        "TargetNodeName": "Head"
+      },
+      {
+        "Type": "TimerStart",
+        "Name": "CatLap_Cooldown",
+        "StartValueRange": {
+          "Compute": "CatLapCooldownRange"
+        },
+        "RestartValueRange": {
+          "Compute": "CatLapCooldownRange"
+        }
+      },
+      {
+        "Type": "TimerRestart",
+        "Name": "CatLap_Cooldown"
+      }
+    ]
+  }
+}

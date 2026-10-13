@@ -1,0 +1,543 @@
+{
+  "Enabled": true,
+  "Priority": 50,
+  "RoleIds": [
+    "Cat_Pet",
+    "Cat_Longhair_Pet",
+    "Cat_Shorthair_Pet",
+    "Cat_Bobtail_Pet"
+  ],
+  "Talents": [
+    {
+      "Id": "AlecsCats_Housecat_Contented",
+      "DisplayName": "server.alecsCats.talents.contented.name",
+      "Description": "server.alecsCats.talents.contented.description",
+      "IconPath": "Tamework/LinkedPanelIcons/Trait_Disposition.png",
+      "Tier": 1,
+      "Branch": "server.alecsCats.talents.branch.housecat",
+      "PointCost": 1,
+      "Effects": [
+        {
+          "EffectKey": "HappinessGainMultiplier",
+          "Multiplier": 1.06
+        }
+      ]
+    },
+    {
+      "Id": "AlecsCats_Housecat_Cozy",
+      "DisplayName": "server.alecsCats.talents.cozy.name",
+      "Description": "server.alecsCats.talents.cozy.description",
+      "IconPath": "Tamework/LinkedPanelIcons/Trait_Disposition.png",
+      "Tier": 2,
+      "Branch": "server.alecsCats.talents.branch.housecat",
+      "PointCost": 1,
+      "RequiresTalentIds": [
+        "AlecsCats_Housecat_Contented"
+      ],
+      "Effects": [
+        {
+          "EffectKey": "HappinessGainMultiplier",
+          "Multiplier": 1.08
+        }
+      ]
+    },
+    {
+      "Id": "AlecsCats_Housecat_SunNapper",
+      "DisplayName": "server.alecsCats.talents.sunNapper.name",
+      "Description": "server.alecsCats.talents.sunNapper.description",
+      "IconPath": "Tamework/LinkedPanelIcons/Trait_Disposition.png",
+      "Tier": 3,
+      "Branch": "server.alecsCats.talents.branch.housecat",
+      "PointCost": 2,
+      "RequiresTalentIds": [
+        "AlecsCats_Housecat_Cozy"
+      ],
+      "Effects": [
+        {
+          "EffectKey": "HappinessGainMultiplier",
+          "Multiplier": 1.1
+        }
+      ]
+    },
+    {
+      "Id": "AlecsCats_Housecat_Homebody",
+      "DisplayName": "server.alecsCats.talents.homebody.name",
+      "Description": "server.alecsCats.talents.homebody.description",
+      "IconPath": "Tamework/LinkedPanelIcons/Trait_Disposition.png",
+      "Tier": 4,
+      "Branch": "server.alecsCats.talents.branch.housecat",
+      "PointCost": 2,
+      "RequiresTalentIds": [
+        "AlecsCats_Housecat_SunNapper"
+      ],
+      "Effects": [
+        {
+          "EffectKey": "HappinessGainMultiplier",
+          "Multiplier": 1.12
+        }
+      ]
+    },
+    {
+      "Id": "AlecsCats_Housecat_Pampered",
+      "DisplayName": "server.alecsCats.talents.pampered.name",
+      "Description": "server.alecsCats.talents.pampered.description",
+      "IconPath": "Tamework/LinkedPanelIcons/Trait_Disposition.png",
+      "Tier": 5,
+      "Branch": "server.alecsCats.talents.branch.housecat",
+      "PointCost": 3,
+      "RequiresTalentIds": [
+        "AlecsCats_Housecat_Homebody"
+      ],
+      "Effects": [
+        {
+          "EffectKey": "HappinessGainMultiplier",
+          "Multiplier": 1.14
+        }
+      ]
+    },
+    {
+      "Id": "AlecsCats_Housecat_LightEater",
+      "DisplayName": "server.alecsCats.talents.lightEater.name",
+      "Description": "server.alecsCats.talents.lightEater.description",
+      "IconPath": "Tamework/LinkedPanelIcons/Trait_Appetite.png",
+      "Tier": 2,
+      "Branch": "server.alecsCats.talents.branch.housecat",
+      "PointCost": 1,
+      "RequiresTalentIds": [
+        "AlecsCats_Housecat_Contented"
+      ],
+      "Effects": [
+        {
+          "EffectKey": "NeedsDecayMultiplier",
+          "Multiplier": 0.94
+        }
+      ]
+    },
+    {
+      "Id": "AlecsCats_Housecat_Hardy",
+      "DisplayName": "server.alecsCats.talents.hardy.name",
+      "Description": "server.alecsCats.talents.hardy.description",
+      "IconPath": "Tamework/LinkedPanelIcons/Trait_Appetite.png",
+      "Tier": 3,
+      "Branch": "server.alecsCats.talents.branch.housecat",
+      "PointCost": 2,
+      "RequiresTalentIds": [
+        "AlecsCats_Housecat_LightEater"
+      ],
+      "Effects": [
+        {
+          "EffectKey": "NeedsDecayMultiplier",
+          "Multiplier": 0.92
+        }
+      ]
+    },
+    {
+      "Id": "AlecsCats_Housecat_LowUpkeep",
+      "DisplayName": "server.alecsCats.talents.lowUpkeep.name",
+      "Description": "server.alecsCats.talents.lowUpkeep.description",
+      "IconPath": "Tamework/LinkedPanelIcons/Trait_Appetite.png",
+      "Tier": 4,
+      "Branch": "server.alecsCats.talents.branch.housecat",
+      "PointCost": 2,
+      "RequiresTalentIds": [
+        "AlecsCats_Housecat_Hardy"
+      ],
+      "Effects": [
+        {
+          "EffectKey": "NeedsDecayMultiplier",
+          "Multiplier": 0.9
+        }
+      ]
+    },
+    {
+      "Id": "AlecsCats_Housecat_EasyKeeper",
+      "DisplayName": "server.alecsCats.talents.easyKeeper.name",
+      "Description": "server.alecsCats.talents.easyKeeper.description",
+      "IconPath": "Tamework/LinkedPanelIcons/Trait_Appetite.png",
+      "Tier": 5,
+      "Branch": "server.alecsCats.talents.branch.housecat",
+      "PointCost": 3,
+      "RequiresTalentIds": [
+        "AlecsCats_Housecat_LowUpkeep"
+      ],
+      "Effects": [
+        {
+          "EffectKey": "NeedsDecayMultiplier",
+          "Multiplier": 0.88
+        }
+      ]
+    },
+    {
+      "Id": "AlecsCats_Housecat_LapCat",
+      "DisplayName": "server.alecsCats.talents.lapCat.name",
+      "Description": "server.alecsCats.talents.lapCat.description",
+      "IconPath": "Tamework/LinkedPanelIcons/Need_Happiness.png",
+      "Tier": 6,
+      "Branch": "server.alecsCats.talents.branch.housecat",
+      "PointCost": 4,
+      "MinLevel": 12,
+      "RequiresTalentIds": [
+        "AlecsCats_Housecat_Pampered",
+        "AlecsCats_Housecat_EasyKeeper"
+      ],
+      "Effects": []
+    },
+    {
+      "Id": "AlecsCats_Mouser_Nimble",
+      "DisplayName": "server.alecsCats.talents.nimble.name",
+      "Description": "server.alecsCats.talents.nimble.description",
+      "IconPath": "Tamework/LinkedPanelIcons/Trait_Swiftness.png",
+      "Tier": 1,
+      "Branch": "server.alecsCats.talents.branch.mouser",
+      "PointCost": 1,
+      "Effects": [
+        {
+          "EffectKey": "MoveSpeedMultiplier",
+          "Multiplier": 1.03
+        }
+      ]
+    },
+    {
+      "Id": "AlecsCats_Mouser_SharpClaws",
+      "DisplayName": "server.alecsCats.talents.sharpClaws.name",
+      "Description": "server.alecsCats.talents.sharpClaws.description",
+      "IconPath": "Tamework/LinkedPanelIcons/Trait_Strength.png",
+      "Tier": 2,
+      "Branch": "server.alecsCats.talents.branch.mouser",
+      "PointCost": 1,
+      "RequiresTalentIds": [
+        "AlecsCats_Mouser_Nimble"
+      ],
+      "Effects": [
+        {
+          "EffectKey": "DamageDealtMultiplier",
+          "Multiplier": 1.05
+        }
+      ]
+    },
+    {
+      "Id": "AlecsCats_Mouser_QuickPaws",
+      "DisplayName": "server.alecsCats.talents.quickPaws.name",
+      "Description": "server.alecsCats.talents.quickPaws.description",
+      "IconPath": "Tamework/LinkedPanelIcons/Trait_Swiftness.png",
+      "Tier": 3,
+      "Branch": "server.alecsCats.talents.branch.mouser",
+      "PointCost": 2,
+      "RequiresTalentIds": [
+        "AlecsCats_Mouser_SharpClaws"
+      ],
+      "Effects": [
+        {
+          "EffectKey": "MoveSpeedMultiplier",
+          "Multiplier": 1.04
+        }
+      ]
+    },
+    {
+      "Id": "AlecsCats_Mouser_Pouncer",
+      "DisplayName": "server.alecsCats.talents.pouncer.name",
+      "Description": "server.alecsCats.talents.pouncer.description",
+      "IconPath": "Tamework/LinkedPanelIcons/Trait_Strength.png",
+      "Tier": 4,
+      "Branch": "server.alecsCats.talents.branch.mouser",
+      "PointCost": 2,
+      "RequiresTalentIds": [
+        "AlecsCats_Mouser_QuickPaws"
+      ],
+      "Effects": [
+        {
+          "EffectKey": "DamageDealtMultiplier",
+          "Multiplier": 1.08
+        }
+      ]
+    },
+    {
+      "Id": "AlecsCats_Mouser_ApexHunter",
+      "DisplayName": "server.alecsCats.talents.apexHunter.name",
+      "Description": "server.alecsCats.talents.apexHunter.description",
+      "IconPath": "Tamework/LinkedPanelIcons/Trait_Strength.png",
+      "Tier": 5,
+      "Branch": "server.alecsCats.talents.branch.mouser",
+      "PointCost": 3,
+      "RequiresTalentIds": [
+        "AlecsCats_Mouser_Pouncer"
+      ],
+      "Effects": [
+        {
+          "EffectKey": "DamageDealtMultiplier",
+          "Multiplier": 1.12
+        }
+      ]
+    },
+    {
+      "Id": "AlecsCats_Mouser_ThickFur",
+      "DisplayName": "server.alecsCats.talents.thickFur.name",
+      "Description": "server.alecsCats.talents.thickFur.description",
+      "IconPath": "Tamework/LinkedPanelIcons/Trait_Toughness.png",
+      "Tier": 2,
+      "Branch": "server.alecsCats.talents.branch.mouser",
+      "PointCost": 1,
+      "RequiresTalentIds": [
+        "AlecsCats_Mouser_Nimble"
+      ],
+      "Effects": [
+        {
+          "EffectKey": "DamageTakenMultiplier",
+          "Multiplier": 0.95
+        }
+      ]
+    },
+    {
+      "Id": "AlecsCats_Mouser_Scrapper",
+      "DisplayName": "server.alecsCats.talents.scrapper.name",
+      "Description": "server.alecsCats.talents.scrapper.description",
+      "IconPath": "Tamework/LinkedPanelIcons/Trait_Toughness.png",
+      "Tier": 3,
+      "Branch": "server.alecsCats.talents.branch.mouser",
+      "PointCost": 2,
+      "RequiresTalentIds": [
+        "AlecsCats_Mouser_ThickFur"
+      ],
+      "Effects": [
+        {
+          "EffectKey": "DamageTakenMultiplier",
+          "Multiplier": 0.93
+        }
+      ]
+    },
+    {
+      "Id": "AlecsCats_Mouser_AlleyCat",
+      "DisplayName": "server.alecsCats.talents.alleyCat.name",
+      "Description": "server.alecsCats.talents.alleyCat.description",
+      "IconPath": "Tamework/LinkedPanelIcons/Trait_Toughness.png",
+      "Tier": 4,
+      "Branch": "server.alecsCats.talents.branch.mouser",
+      "PointCost": 2,
+      "RequiresTalentIds": [
+        "AlecsCats_Mouser_Scrapper"
+      ],
+      "Effects": [
+        {
+          "EffectKey": "DamageTakenMultiplier",
+          "Multiplier": 0.9
+        }
+      ]
+    },
+    {
+      "Id": "AlecsCats_Mouser_NineLives",
+      "DisplayName": "server.alecsCats.talents.nineLives.name",
+      "Description": "server.alecsCats.talents.nineLives.description",
+      "IconPath": "Tamework/LinkedPanelIcons/Trait_Health.png",
+      "Tier": 5,
+      "Branch": "server.alecsCats.talents.branch.mouser",
+      "PointCost": 3,
+      "RequiresTalentIds": [
+        "AlecsCats_Mouser_AlleyCat"
+      ],
+      "Effects": [
+        {
+          "EffectKey": "ReviveCooldownMultiplier",
+          "Multiplier": 0.7
+        }
+      ]
+    },
+    {
+      "Id": "AlecsCats_Mouser_GiftGiver",
+      "DisplayName": "server.alecsCats.talents.giftGiver.name",
+      "Description": "server.alecsCats.talents.giftGiver.description",
+      "IconPath": "Tamework/LinkedPanelIcons/Trait_Bounty.png",
+      "Tier": 6,
+      "Branch": "server.alecsCats.talents.branch.mouser",
+      "PointCost": 4,
+      "MinLevel": 12,
+      "RequiresTalentIds": [
+        "AlecsCats_Mouser_ApexHunter",
+        "AlecsCats_Mouser_NineLives"
+      ],
+      "Effects": []
+    },
+    {
+      "Id": "AlecsCats_Pedigree_Charmer",
+      "DisplayName": "server.alecsCats.talents.charmer.name",
+      "Description": "server.alecsCats.talents.charmer.description",
+      "IconPath": "Tamework/LinkedPanelIcons/Breeding_Cooldown.png",
+      "Tier": 1,
+      "Branch": "server.alecsCats.talents.branch.pedigree",
+      "PointCost": 1,
+      "Effects": [
+        {
+          "EffectKey": "BreedCooldownMultiplier",
+          "Multiplier": 0.94
+        }
+      ]
+    },
+    {
+      "Id": "AlecsCats_Pedigree_GoodStock",
+      "DisplayName": "server.alecsCats.talents.goodStock.name",
+      "Description": "server.alecsCats.talents.goodStock.description",
+      "IconPath": "Tamework/LinkedPanelIcons/Trait_Fertility.png",
+      "Tier": 2,
+      "Branch": "server.alecsCats.talents.branch.pedigree",
+      "PointCost": 1,
+      "RequiresTalentIds": [
+        "AlecsCats_Pedigree_Charmer"
+      ],
+      "Effects": [
+        {
+          "EffectKey": "FertilityMultiplier",
+          "Multiplier": 1.1
+        }
+      ]
+    },
+    {
+      "Id": "AlecsCats_Pedigree_StrongLine",
+      "DisplayName": "server.alecsCats.talents.strongLine.name",
+      "Description": "server.alecsCats.talents.strongLine.description",
+      "IconPath": "Tamework/LinkedPanelIcons/Trait_Productivity.png",
+      "Tier": 3,
+      "Branch": "server.alecsCats.talents.branch.pedigree",
+      "PointCost": 2,
+      "RequiresTalentIds": [
+        "AlecsCats_Pedigree_GoodStock"
+      ],
+      "Effects": [
+        {
+          "EffectKey": "TraitMutationChanceMultiplier",
+          "Multiplier": 1.4
+        }
+      ]
+    },
+    {
+      "Id": "AlecsCats_Pedigree_Prolific",
+      "DisplayName": "server.alecsCats.talents.prolific.name",
+      "Description": "server.alecsCats.talents.prolific.description",
+      "IconPath": "Tamework/LinkedPanelIcons/Trait_Fertility.png",
+      "Tier": 4,
+      "Branch": "server.alecsCats.talents.branch.pedigree",
+      "PointCost": 2,
+      "RequiresTalentIds": [
+        "AlecsCats_Pedigree_StrongLine"
+      ],
+      "Effects": [
+        {
+          "EffectKey": "FertilityMultiplier",
+          "Multiplier": 1.15
+        }
+      ]
+    },
+    {
+      "Id": "AlecsCats_Pedigree_Champion",
+      "DisplayName": "server.alecsCats.talents.champion.name",
+      "Description": "server.alecsCats.talents.champion.description",
+      "IconPath": "Tamework/LinkedPanelIcons/Trait_Productivity.png",
+      "Tier": 5,
+      "Branch": "server.alecsCats.talents.branch.pedigree",
+      "PointCost": 3,
+      "RequiresTalentIds": [
+        "AlecsCats_Pedigree_Prolific"
+      ],
+      "Effects": [
+        {
+          "EffectKey": "TraitMutationChanceMultiplier",
+          "Multiplier": 1.6
+        }
+      ]
+    },
+    {
+      "Id": "AlecsCats_Pedigree_QuickLitter",
+      "DisplayName": "server.alecsCats.talents.quickLitter.name",
+      "Description": "server.alecsCats.talents.quickLitter.description",
+      "IconPath": "Tamework/LinkedPanelIcons/Breeding_Cooldown.png",
+      "Tier": 2,
+      "Branch": "server.alecsCats.talents.branch.pedigree",
+      "PointCost": 1,
+      "RequiresTalentIds": [
+        "AlecsCats_Pedigree_Charmer"
+      ],
+      "Effects": [
+        {
+          "EffectKey": "BreedCooldownMultiplier",
+          "Multiplier": 0.9
+        }
+      ]
+    },
+    {
+      "Id": "AlecsCats_Pedigree_RareCoat",
+      "DisplayName": "server.alecsCats.talents.rareCoat.name",
+      "Description": "server.alecsCats.talents.rareCoat.description",
+      "IconPath": "Tamework/LinkedPanelIcons/Trait_Regrowth.png",
+      "Tier": 3,
+      "Branch": "server.alecsCats.talents.branch.pedigree",
+      "PointCost": 2,
+      "RequiresTalentIds": [
+        "AlecsCats_Pedigree_QuickLitter"
+      ],
+      "Effects": [
+        {
+          "EffectKey": "AppearanceMutationChanceMultiplier",
+          "Multiplier": 1.4
+        }
+      ]
+    },
+    {
+      "Id": "AlecsCats_Pedigree_Doting",
+      "DisplayName": "server.alecsCats.talents.doting.name",
+      "Description": "server.alecsCats.talents.doting.description",
+      "IconPath": "Tamework/LinkedPanelIcons/Breeding_Cooldown.png",
+      "Tier": 4,
+      "Branch": "server.alecsCats.talents.branch.pedigree",
+      "PointCost": 2,
+      "RequiresTalentIds": [
+        "AlecsCats_Pedigree_RareCoat"
+      ],
+      "Effects": [
+        {
+          "EffectKey": "BreedCooldownMultiplier",
+          "Multiplier": 0.88
+        }
+      ]
+    },
+    {
+      "Id": "AlecsCats_Pedigree_Exotic",
+      "DisplayName": "server.alecsCats.talents.exotic.name",
+      "Description": "server.alecsCats.talents.exotic.description",
+      "IconPath": "Tamework/LinkedPanelIcons/Trait_Regrowth.png",
+      "Tier": 5,
+      "Branch": "server.alecsCats.talents.branch.pedigree",
+      "PointCost": 3,
+      "RequiresTalentIds": [
+        "AlecsCats_Pedigree_Doting"
+      ],
+      "Effects": [
+        {
+          "EffectKey": "AppearanceMutationChanceMultiplier",
+          "Multiplier": 1.6
+        }
+      ]
+    },
+    {
+      "Id": "AlecsCats_Pedigree_ShowCat",
+      "DisplayName": "server.alecsCats.talents.showCat.name",
+      "Description": "server.alecsCats.talents.showCat.description",
+      "IconPath": "Tamework/LinkedPanelIcons/Trait_Size.png",
+      "Tier": 6,
+      "Branch": "server.alecsCats.talents.branch.pedigree",
+      "PointCost": 4,
+      "MinLevel": 12,
+      "RequiresTalentIds": [
+        "AlecsCats_Pedigree_Champion",
+        "AlecsCats_Pedigree_Exotic"
+      ],
+      "Effects": [
+        {
+          "EffectKey": "TraitMutationChanceMultiplier",
+          "Multiplier": 1.25
+        },
+        {
+          "EffectKey": "AppearanceMutationChanceMultiplier",
+          "Multiplier": 1.25
+        }
+      ]
+    }
+  ]
+}

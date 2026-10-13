@@ -1,0 +1,49 @@
+{
+  "Enabled": true,
+  "Priority": 50,
+  "RoleIds": [
+    "Cat_Pet",
+    "Cat_Longhair_Pet",
+    "Cat_Shorthair_Pet",
+    "Cat_Bobtail_Pet"
+  ],
+  "Levels": {
+    "MaxLevel": 30,
+    "BaseXp": 100.0,
+    "GrowthFactor": 1.09
+  },
+  "XpSources": {
+    "Feed": {
+      "Enabled": true,
+      "FlatXp": 12.0,
+      "AwardCooldownSeconds": 900
+    },
+    "Breeding": {
+      "Enabled": true,
+      "FlatXp": 120.0
+    },
+    "Combat": {
+      "Enabled": true,
+      "DamageDealtXpPerPoint": 0.5,
+      "DamageTakenXpPerPoint": 0.15,
+      "MinimumDamageEvent": 2.0,
+      "AwardVsPlayers": false,
+      "AwardVsOwnedAllies": false
+    }
+  },
+  "StatGrowth": {
+    "Effects": [
+      {
+        "EffectKey": "MaxHealthMultiplier",
+        "PerLevel": 0.006
+      },
+      {
+        "EffectKey": "MoveSpeedMultiplier",
+        "PerLevel": 0.001
+      }
+    ]
+  },
+  "TalentPoints": {
+    "PointsPerLevel": 1
+  }
+}

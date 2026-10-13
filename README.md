@@ -25,6 +25,7 @@ This mod started as a simple cat conversion from unused base-game assets and has
 - Happiness/needs simulation with resource seeking
 - Passive companion breeding
 - Trait generation and inheritance for bred companion cats
+- Leveling and a 30-talent tree for pet cats
 - Multi-language localization
 
 --------------
@@ -176,6 +177,26 @@ Install Tamework 5.2.0 or newer in the 5.x line on Hytale 0.6.7 or newer, and re
 - Body type roles can be inherited from either parent, with a small chance of a different body type appearing as a mutation
 - Cat breeding uses Tamework gender support, so compatible breeding pairs must be different genders when that Tamework setting is enabled
 
+## Leveling and Talents
+Pet cats gain XP and level up, to a maximum of level 30. Each level gives a little more health and speed and one talent point. Open the talent page from the Cat Treat Bag's companion panel.
+
+Cats gain XP from:
+- Being fed (at most once every 15 minutes)
+- Breeding
+- Fighting
+- Playing with the Cat Teaser Wand or a Cat Yarn Ball
+- Napping in a Cat Bed, using a Cat Scratching Post, and sitting on a Cat Tower
+
+The tree has three branches. Each branch has a first talent, two paths of four talents, and a final talent that needs both paths. A whole branch costs 21 points and the whole tree costs 63, so a level 30 cat can finish one branch and one path of another.
+
+| Branch | Path one | Path two | Final talent |
+| --- | --- | --- | --- |
+| Housecat | Happiness rises faster | Hunger and thirst drain more slowly | **Lap Cat**: while idle near its owner, the cat purrs now and then and gives the owner a short health regeneration buff |
+| Mouser | More damage and speed | Less damage taken, and a faster return after defeat | **Gift Giver**: while idle near its owner, the cat brings a small gift now and then (feathers, raw fish, raw meat, sticks, plant fiber, or catnip) |
+| Pedigree | Higher fertility and more trait mutations in kittens | Shorter breeding wait and more coat and eye mutations in kittens | **Show Cat**: more trait, coat, and eye mutations in kittens |
+
+Final talents need level 12.
+
 ## Spawns
 Cats are uncommon but not extremely rare.
 - Mediumhair: Zone 1 Plains and Forests
@@ -216,6 +237,10 @@ Total combinations: 4 body types x 19 coats x 16 eye variants = 1,216 appearance
   - Server/Tamework/Breeding/ACBreedCat.json
 - Trait Config:
   - Server/Tamework/Traits/ACTraitsCat.json
+- Leveling Config:
+  - Server/Tamework/Leveling/ACLevelCat.json
+- Talent Config:
+  - Server/Tamework/Talents/ACTalentCat.json
 - Attachment Migration Config:
   - Server/Tamework/AttachmentMigrations/ACAttachmentMigrationCatEyesPre190.json
 - Attachment Display Config:

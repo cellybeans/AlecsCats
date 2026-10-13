@@ -17,6 +17,10 @@
     "CatYarnHappiness": {
       "Value": 5,
       "Description": "Happiness gained after playing with the ball."
+    },
+    "CatYarnXp": {
+      "Value": 10,
+      "Description": "Companion XP gained with the happiness."
     }
   },
   "Content": {
@@ -216,6 +220,9 @@
             "Type": "TameworkProgressionReward",
             "Happiness": {
               "Compute": "CatYarnHappiness"
+            },
+            "Xp": {
+              "Compute": "CatYarnXp"
             }
           },
           {
