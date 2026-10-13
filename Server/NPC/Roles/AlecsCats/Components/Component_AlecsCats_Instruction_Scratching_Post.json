@@ -21,6 +21,10 @@
     "CatPostHappiness": {
       "Value": 4,
       "Description": "Happiness gained after scratching."
+    },
+    "CatPostXp": {
+      "Value": 6,
+      "Description": "Companion XP gained with the happiness."
     }
   },
   "Content": {
@@ -225,6 +229,9 @@
             "Type": "TameworkProgressionReward",
             "Happiness": {
               "Compute": "CatPostHappiness"
+            },
+            "Xp": {
+              "Compute": "CatPostXp"
             }
           },
           {

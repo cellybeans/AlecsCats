@@ -1725,6 +1725,20 @@
               ]
             },
             {
+              "$Comment": "Lap Cat talent: purr and buff the owner when they are close.",
+              "Reference": "Component_AlecsCats_Instruction_Lap_Cat",
+              "Modify": {
+                "CatLapRange": 4
+              }
+            },
+            {
+              "$Comment": "Gift Giver talent: bring the owner a small gift now and then.",
+              "Reference": "Component_AlecsCats_Instruction_Gift_Giver",
+              "Modify": {
+                "CatGiftRange": 6
+              }
+            },
+            {
               "$Comment": "Keep flock followers near their leader before regular idle wander.",
               "Reference": "Component_Tamework_Instruction_Flock_Follow_Wander",
               "Modify": {

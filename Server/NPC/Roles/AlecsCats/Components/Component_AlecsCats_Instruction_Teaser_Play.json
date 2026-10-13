@@ -286,7 +286,8 @@
         "Actions": [
           {
             "Type": "TameworkProgressionReward",
-            "Happiness": 6
+            "Happiness": 6,
+            "Xp": 10
           },
           {
             "Type": "SpawnParticles",

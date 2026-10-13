@@ -2,6 +2,14 @@
 
 All notable changes to **Alec's Cats!** will be documented in this file.
 
+## Unreleased - Leveling and Talents
+
+- Pet cats now gain XP and level up, to a maximum of level 30. Each level gives a little more health and speed and one talent point.
+- Cats gain XP from being fed, breeding, fighting, playing with the Cat Teaser Wand or a Cat Yarn Ball, and using a Cat Bed, Cat Scratching Post, or Cat Tower.
+- Added a 30-talent tree with three branches: Housecat (happiness and needs), Mouser (speed, damage, and toughness), and Pedigree (breeding and mutations). Open it from the Cat Treat Bag's companion panel.
+- Each branch ends in a final talent that needs level 12. Lap Cat makes the cat purr near its owner and give a short health regeneration buff. Gift Giver makes the cat bring its owner a small gift now and then. Show Cat raises the chance of trait, coat, and eye mutations in kittens.
+- Talent names and descriptions are translated in every supported language.
+
 ## 2.0.1 - Treat Bag Shortcuts on Update 7 - 2026-10-09
 
 - On Hytale Update 7, the E and R shortcuts on the Cat Treat Bag keep working. The Update 7 client only sends those keys with a weapon in hand, so the bag counts as a weapon there. Nothing changes on Update 6.
