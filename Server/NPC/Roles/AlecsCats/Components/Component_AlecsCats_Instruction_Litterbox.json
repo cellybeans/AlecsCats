@@ -578,7 +578,7 @@
             "Actions": [
               {
                 "Type": "PlaySound",
-                "SoundEventId": "SFX_Sand_Hit"
+                "SoundEventId": "SFX_Sand_Walk"
               },
               {
                 "Type": "SpawnParticles",
@@ -618,7 +618,7 @@
             "Actions": [
               {
                 "Type": "PlaySound",
-                "SoundEventId": "SFX_Sand_Hit"
+                "SoundEventId": "SFX_Sand_Walk"
               },
               {
                 "Type": "SpawnParticles",
