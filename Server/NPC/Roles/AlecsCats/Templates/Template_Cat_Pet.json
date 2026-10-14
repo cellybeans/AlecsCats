@@ -1084,6 +1084,26 @@
           "Type": "SetFlag",
           "Name": "CatYarn_Pouncing",
           "SetTo": false
+        },
+        {
+          "Type": "SetFlag",
+          "Name": "CatLitter_Engaged",
+          "SetTo": false
+        },
+        {
+          "Type": "SetFlag",
+          "Name": "CatLitter_Digging",
+          "SetTo": false
+        },
+        {
+          "Type": "SetFlag",
+          "Name": "CatLitter_Squatting",
+          "SetTo": false
+        },
+        {
+          "Type": "SetFlag",
+          "Name": "CatLitter_Kicking",
+          "SetTo": false
         }
       ]
     }
@@ -1792,6 +1812,13 @@
               "Reference": "Component_AlecsCats_Instruction_Cat_Bed",
               "Modify": {
                 "CatBedSearchRange": 10
+              }
+            },
+            {
+              "$Comment": "Idle cats now and then use a nearby litter box.",
+              "Reference": "Component_AlecsCats_Instruction_Litterbox",
+              "Modify": {
+                "CatLitterSearchRange": 10
               }
             },
             {

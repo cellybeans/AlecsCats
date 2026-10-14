@@ -142,6 +142,7 @@ Idle pet cats use these on their own. Each one gives the cat a small happiness g
 - **Cat Bed** (`Cat_Bed`): cats walk onto it, lie down, and nap for 30 to 60 seconds.
 - **Cat Scratching Post** (`Cat_Scratching_Post`): cats walk up, rear onto their hind legs, and scratch for a few seconds.
 - **Cat Tower** (`Cat_Tower`): two blocks wide and two tall. Cats leap onto the top perch and sit there for a while, and they also scratch its post. Leave the space above the perch open, and leave at least one side of the post clear.
+- **Cat Litter Box** (`Cat_Litterbox`): now and then a cat walks in, digs a spot, squats, and kicks litter back over it. Each cat uses it at most once every 15 to 25 minutes.
 - **Cat Yarn Ball** (`Cat_Yarn_Ball`): use it to throw it. Where it lands it stays as a ball on the ground until someone picks it up; a throw that hits a creature drops to the ground there. Idle cats within ten blocks chase it, swat it, and now and then back off and pounce on it, and it rolls away each time. Walking into it kicks it too. It stays within about six blocks of where it landed. Press Use on the ball to pick it up.
 - **Cat Bowl** (`Cat_Bowl`): one bowl for food or water, like Tamework's feed trough.
   - Food: open it and put in raw fish or Tamework Carnivore Kibble. Hungry cats walk over and eat from it.

@@ -92,6 +92,20 @@
         "Name": "CatYarn_Cooldown"
       },
       {
+        "Type": "TimerStart",
+        "Name": "CatLitter_Cooldown",
+        "StartValueRange": {
+          "Compute": "CatEnrichGiveUpCooldownRange"
+        },
+        "RestartValueRange": {
+          "Compute": "CatEnrichGiveUpCooldownRange"
+        }
+      },
+      {
+        "Type": "TimerRestart",
+        "Name": "CatLitter_Cooldown"
+      },
+      {
         "Type": "SetFlag",
         "Name": "CatEnrich_Busy",
         "SetTo": false
@@ -149,6 +163,26 @@
       {
         "Type": "SetFlag",
         "Name": "CatYarn_Pouncing",
+        "SetTo": false
+      },
+      {
+        "Type": "SetFlag",
+        "Name": "CatLitter_Engaged",
+        "SetTo": false
+      },
+      {
+        "Type": "SetFlag",
+        "Name": "CatLitter_Digging",
+        "SetTo": false
+      },
+      {
+        "Type": "SetFlag",
+        "Name": "CatLitter_Squatting",
+        "SetTo": false
+      },
+      {
+        "Type": "SetFlag",
+        "Name": "CatLitter_Kicking",
         "SetTo": false
       }
     ]

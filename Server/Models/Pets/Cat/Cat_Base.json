@@ -183,6 +183,33 @@
         }
       ]
     },
+    "LitterDig": {
+      "Animations": [
+        {
+          "Animation": "NPC/Pets/Cat/Animations/Litter_Dig.blockyanim",
+          "Looping": true,
+          "BlendingDuration": 0.2
+        }
+      ]
+    },
+    "LitterSquat": {
+      "Animations": [
+        {
+          "Animation": "NPC/Pets/Cat/Animations/Litter_Squat.blockyanim",
+          "Looping": true,
+          "BlendingDuration": 0.3
+        }
+      ]
+    },
+    "LitterKick": {
+      "Animations": [
+        {
+          "Animation": "NPC/Pets/Cat/Animations/Litter_Kick.blockyanim",
+          "Looping": true,
+          "BlendingDuration": 0.2
+        }
+      ]
+    },
     "Sit": {
       "Animations": [
         {
