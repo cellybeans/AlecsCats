@@ -9,6 +9,7 @@ All notable changes to **Alec's Cats!** will be documented in this file.
 - Added a 30-talent tree with three branches: Housecat (happiness and needs), Mouser (speed, damage, and toughness), and Pedigree (breeding and mutations). Open it from the Cat Treat Bag's companion panel.
 - Each branch ends in a final talent that needs level 12. Lap Cat makes the cat purr near its owner and give a short health regeneration buff. Gift Giver makes the cat bring its owner a small gift now and then. Show Cat raises the chance of trait, coat, and eye mutations in kittens.
 - Talent names and descriptions are translated in every supported language.
+- Cats now step around when they turn on the spot, instead of spinning in place. This needs the next Alec's Tamework update.
 - Added the Cat Litter Box. Now and then an idle pet cat steps in, digs a spot, squats, and kicks litter back over it, then gains a little happiness and XP. Each cat uses it at most once every 15 to 25 minutes. It is crafted at a Tier 2 Workbench in the Tinkering tab, or in the Cats tab of the Animal Husbandry Workbench when that mod is installed, and is translated in every supported language.
 
 ## 2.0.1 - Treat Bag Shortcuts on Update 7 - 2026-10-09

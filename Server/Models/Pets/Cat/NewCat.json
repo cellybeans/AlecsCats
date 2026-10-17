@@ -15,6 +15,20 @@
     }
   },
   "AnimationSets": {
+    "TurnLeft": {
+      "Animations": [
+        {
+          "Animation": "NPC/Pets/Cat/Animations/Turn_Left.blockyanim"
+        }
+      ]
+    },
+    "TurnRight": {
+      "Animations": [
+        {
+          "Animation": "NPC/Pets/Cat/Animations/Turn_Right.blockyanim"
+        }
+      ]
+    },
     "Idle": {
       "Animations": [
         {
