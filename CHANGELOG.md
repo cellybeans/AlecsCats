@@ -11,6 +11,7 @@ All notable changes to **Alec's Cats!** will be documented in this file.
 - Talent names and descriptions are translated in every supported language.
 - Cats now step around when they turn on the spot, instead of spinning in place. This needs the next Alec's Tamework update.
 - Pet cats no longer drift away while wandering. Their wander area now moves only when you take them out of Follow, Hold, or a move command, not every time they nap, eat, drink, or fight, so they stay near where you told them to wander.
+- When you tell a following cat to wander, its wander area now centers on where you stand, as long as you are within 16 blocks, instead of on the spot where it stopped.
 - Pet cats that wander into water walk back toward their wander area and no longer settle or sleep underwater. They can still breathe underwater, so they can reach water to drink and follow you through it.
 - Added the Cat Litter Box. Now and then an idle pet cat steps in, digs a spot, squats, and kicks litter back over it, then gains a little happiness and XP. Each cat uses it at most once every 15 to 25 minutes. It is crafted at a Tier 2 Workbench in the Tinkering tab, or in the Cats tab of the Animal Husbandry Workbench when that mod is installed, and is translated in every supported language.
 
