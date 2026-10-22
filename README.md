@@ -31,7 +31,7 @@ This mod started as a simple cat conversion from unused base-game assets and has
 --------------
 <H2>Required:</H2>
 <ul>
-<li><a href="https://www.curseforge.com/hytale/mods/alecs-tamework">Alec's Tamework!</a> <code>&gt;=5.2.0 &lt;6.0.0</code></li>
+<li><a href="https://www.curseforge.com/hytale/mods/alecs-tamework">Alec's Tamework!</a> <code>&gt;=5.4.0 &lt;6.0.0</code></li>
 </ul>
 <H2>Recommended:</H2>
 <ul>
@@ -151,7 +151,7 @@ Idle pet cats use these on their own. Each one gives the cat a small happiness g
 
 The bowl uses Tamework's feed trough system, so other Tamework companions can eat and drink from it too.
 
-Install Tamework 5.2.0 or newer in the 5.x line on Hytale 0.6.7 or newer, and restart the world/server before using these assets. Reloading Cats assets cannot add the Java builders to a running server.
+Install Tamework 5.4.0 or newer in the 5.x line on Hytale 0.6.7 or newer, and restart the world/server before using these assets. Reloading Cats assets cannot add the Java builders to a running server.
 
 ## Taming and Ownership
 - Taming assigns ownership.

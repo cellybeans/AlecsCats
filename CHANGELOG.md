@@ -2,14 +2,16 @@
 
 All notable changes to **Alec's Cats!** will be documented in this file.
 
-## Unreleased - Leveling and Talents
+## 2.1.0 - Leveling and Talents - 2026-10-22
+
+Supports Hytale 0.6.7 and later in Update 6, and Hytale 0.7. Requires Alec's Tamework `>=5.4.0 <6.0.0`; update Tamework first.
 
 - Pet cats now gain XP and level up, to a maximum of level 30. Each level gives a little more health and speed and one talent point.
 - Cats gain XP from being fed, breeding, fighting, playing with the Cat Teaser Wand or a Cat Yarn Ball, and using a Cat Bed, Cat Scratching Post, or Cat Tower.
 - Added a 30-talent tree with three branches: Housecat (happiness and needs), Mouser (speed, damage, and toughness), and Pedigree (breeding and mutations). Open it from the Cat Treat Bag's companion panel.
 - Each branch ends in a final talent that needs level 12. Lap Cat makes the cat purr near its owner and give a short health regeneration buff. Gift Giver makes the cat bring its owner a small gift now and then. Show Cat raises the chance of trait, coat, and eye mutations in kittens.
 - Talent names and descriptions are translated in every supported language.
-- Cats now step around when they turn on the spot, instead of spinning in place. This needs the next Alec's Tamework update.
+- Cats now step around when they turn on the spot, instead of spinning in place.
 - Pet cats no longer drift away while wandering. Their wander area now moves only when you take them out of Follow, Hold, or a move command, not every time they nap, eat, drink, or fight, so they stay near where you told them to wander.
 - When you tell a following cat to wander, its wander area now centers on where you stand, as long as you are within 16 blocks, instead of on the spot where it stopped.
 - Pet cats that wander into water walk back toward their wander area and no longer settle or sleep underwater. They can still breathe underwater, so they can reach water to drink and follow you through it.
