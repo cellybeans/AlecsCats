@@ -15,6 +15,12 @@ All notable changes to **Alec's Cats!** will be documented in this file.
 - Pet cats that wander into water walk back toward their wander area and no longer settle or sleep underwater. They can still breathe underwater, so they can reach water to drink and follow you through it.
 - Added the Cat Litter Box. Now and then an idle pet cat steps in, digs a spot, squats, and kicks litter back over it, then gains a little happiness and XP. Each cat uses it at most once every 15 to 25 minutes. It is crafted at a Tier 2 Workbench in the Tinkering tab, or in the Cats tab of the Animal Husbandry Workbench when that mod is installed, and is translated in every supported language.
 
+## 2.0.2 - Hytale 0.7 Compatibility Hotfix - 2026-10-13
+
+### Changed
+
+- Expanded declared Hytale server compatibility to `>=0.6.7 <0.8.0`, allowing stable Hytale 0.7 while retaining the existing minimum version.
+
 ## 2.0.1 - Treat Bag Shortcuts on Update 7 - 2026-10-09
 
 - On Hytale Update 7, the E and R shortcuts on the Cat Treat Bag keep working. The Update 7 client only sends those keys with a weapon in hand, so the bag counts as a weapon there. Nothing changes on Update 6.
